@@ -1,6 +1,5 @@
 img{
     align-items: center;
-    border: solid 0.1rem red;
 }
 
 .img-container{
@@ -64,10 +63,91 @@ p{
     /*margin-left: 15rem;*/
     margin-left: 15vw;
 }
+table, th, td {
+border: solid 1px black;
+}
+
+#table-section{
+
+    display: flex;
+    justify-content: center;
+    margin-top: 3rem;
+}
+
+/*table{
+    margin-top: 2rem;
+    margin-left: 6rem;
+}*/
 
 #footer{
     width: 40%;
     display: flex;
     align-items: center;
 
+}
+
+
+@media(max-width: 600px){
+
+    #nAv-container{
+        display: flex;
+        justify-content: center;
+        list-style-type: none;
+        flex-direction: column;
+    
+    }
+    .navegacion:nth-child(1){
+
+        margin-left: 0rem;
+        margin-right: 0rem;
+    
+    }
+
+    .navegacion:nth-child(2){
+
+        margin-left: 0rem;
+        margin-right: 0rem;
+    
+    }
+    .navegacion:nth-child(3){
+    
+        margin-left: 0rem;
+        margin-right: 0rem;
+    
+    }
+
+}
+
+@media(max-width: 800px){
+
+    .navegacion{
+
+        background-color: azure;        
+
+    }
+
+}
+@media(max-width: 600px){
+    img{
+        width: 200px;
+        justify-content: center;
+    }
+}
+
+@media(max-width: 600px){
+    #localnuevo{
+    flex-direction: column;
+    }
+    p{
+        margin-top: 2;
+        margin-left: 0;
+    }
+    #nuevolocal{
+        width: 350px;
+    }
+    #xd{
+        display: flex;
+        justify-content: center;
+        margin-left: 0;
+    }
 }
